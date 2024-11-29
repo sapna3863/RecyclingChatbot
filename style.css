@@ -1,0 +1,67 @@
+
+.roboto-condensed-<uniquifier> {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+body {
+    font-family: Roboto Condensed, sans-serif;
+    background-color: #adc178;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f0ead2;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.chatbox {
+    font-family: Roboto Condensed, sans-serif;
+    border: 1px solid #ddd;
+    height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: left;
+    background-color: #fbf7e8;
+}
+
+.chatbox div {
+    margin: 10px 0;
+}
+
+.user-input {
+    font-family: Roboto Condensed, sans-serif;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#user-message {
+    font-family: Roboto Condensed, sans-serif;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#send-message {
+    padding: 10px 20px;
+    background-color: #a98467;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Roboto Condensed, sans-serif;
+}
+
+#send-message:hover {
+    background-color: #6c584c;
+}
