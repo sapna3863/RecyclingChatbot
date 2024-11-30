@@ -146,8 +146,7 @@ function sendMessage(message, delay = 1000) {
 }
 
 // Event listener for the send button
-sendMessageButton.addEventListener("click", () => {
-    audio.play();
+sendMessageButton.addEventListener("click", () => {    audio.play();
     const userMessage = userMessageInput.value.trim();
     if (userMessage === "") return;
 
@@ -168,3 +167,7 @@ sendMessageButton.addEventListener("click", () => {
 sendMessage("Welcome to the Recycling EngineerBot, an AI-powered chatbot designed to help kids learn engineering through projects using recyclable materials. 🌎🌳🥬", 0);
 sendMessage("Let's get started! What material would you like to learn about? Enter a material (e.g., paper, plastic bottle, cardboard, can, plastic bag):", 3500);
 sendMessage("Type 'exit' to leave the chatbot.", 7000);
+sendMessageButton.addEventListener("click", () => {
+    audio.play().catch(error => console.error("Audio playback failed:", error));
+});
+audio.volume = 1.0; // Full volume
