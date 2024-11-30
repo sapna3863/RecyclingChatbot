@@ -1,4 +1,6 @@
 // Select elements from the DOM
+const audio = new Audio(click-234708.mp3);
+
 const chatHistory = document.getElementById("chat-history");
 const userMessageInput = document.getElementById("user-message");
 const sendMessageButton = document.getElementById("send-message");
@@ -145,6 +147,7 @@ function sendMessage(message, delay = 1000) {
 
 // Event listener for the send button
 sendMessageButton.addEventListener("click", () => {
+    audio.play();
     const userMessage = userMessageInput.value.trim();
     if (userMessage === "") return;
 
