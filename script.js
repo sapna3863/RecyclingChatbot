@@ -41,96 +41,145 @@ const awardLevels = {
     9: "Future Engineer",
 };
 
-// Instruction Templates
+// Updated Instruction Templates
 const instructionsTemplate = {
-    "windmill": {
-        material: "Paper",
-        steps: [
-            "Cut a square piece of paper, about 10x10 cm in size.",
-            "Fold the paper diagonally from corner to corner, then unfold.",
-            "Make cuts along the diagonal lines, stopping about 2-3 cm from the center.",
-            "Fold every other corner to the center and secure them with a pin or glue.",
-            "Attach the windmill to a stick or straw using glue or a pin, then observe how it spins when placed in the wind.",
-        ],
-    },
-    "solar heater": {
-        material: "Plastic Bottle",
-        steps: [
-            "Paint plastic bottles black to absorb more heat from the sun.",
-            "Cut the bottoms off the bottles and arrange them in a line or circle, leaving space for tubing between each bottle.",
-            "Connect the bottles using clear plastic tubing to form a closed water loop.",
-            "Place the setup under direct sunlight and wait for it to warm up.",
-            "Measure the water temperature after 30 minutes to see how much heat has been absorbed.",
-        ],
-    },
-    "periscope": {
-        material: "Cardboard",
-        steps: [
-            "Take two small mirrors (or reflective plastic) and cut them to fit inside a cardboard tube.",
-            "Cut the cardboard into two sections, one to form the body and the other to hold the mirrors at 45-degree angles.",
-            "Position the mirrors inside the tube, with each mirror at a 45-degree angle, to reflect the light from one end to the other.",
-            "Seal the mirrors in place with glue, then look through one end to see around corners or over obstacles.",
-        ],
-    },
-    "parachute": {
-        material: "Plastic Bag",
-        steps: [
-            "Cut a square or rectangular shape from a plastic bag, about 30x30 cm for a standard parachute.",
-            "Tie four strings (around 10 cm long each) to the four corners of the plastic piece.",
-            "Attach the other ends of the strings to a small weight (such as a toy or small object).",
-            "Drop the parachute from a height and observe how it slows down the descent of the object.",
-            "Experiment with different materials and shapes to see how it affects the fall speed.",
-        ],
-    },
-    "pendulum": {
-        material: "Bottle Cap",
-        steps: [
-            "Take a plastic bottle cap and tie a string through a small hole in the center.",
-            "Secure the other end of the string to a stationary object or hold it in your hand.",
-            "Pull the bottle cap back to one side and release it to swing like a pendulum.",
-            "Experiment with different lengths of string to see how it affects the swinging time.",
-        ],
-    },
-    "planter": {
-        material: "Egg Carton",
-        steps: [
-            "Take an empty egg carton and cut off the lid, leaving the bottom section with individual cups.",
-            "Fill each cup with potting soil or compost.",
-            "Plant small seeds (like herbs or flowers) in each compartment.",
-            "Water the plants regularly and place them in a sunny spot.",
-            "Once the plants grow, you can transplant them into larger pots or a garden bed.",
-        ],
-    },
-    "recycled art": {
+    "magazine-collage": {
         material: "Magazines",
         steps: [
-            "Take old magazines and cut out colorful pictures or patterns.",
-            "Use these cutouts to create a collage on a piece of cardboard or canvas.",
-            "Glue the cutouts in an artistic design to form your own recycled art masterpiece.",
-            "Experiment with layering and mixing different textures to enhance your artwork.",
+            "Collect old magazines, newspapers, and colorful printed materials.",
+            "Cut out interesting shapes, colors, and images from the magazines.",
+            "Take a piece of cardboard or thick paper as your base.",
+            "Arrange the cutouts to create a themed collage (like nature, space, or your favorite hobby).",
+            "Use a glue stick to carefully paste down each piece, overlapping for interesting effects.",
+            "Optional: Add personal drawings or writings to personalize your artwork.",
         ],
     },
-    "wind spinner": {
-        material: "Plastic Straw",
+    "cardboard-marble-run": {
+        material: "Cardboard",
         steps: [
-            "Take a plastic straw and bend it slightly to form a curved shape.",
-            "Cut a piece of paper into a spiral shape, and attach it to the end of the straw using glue or tape.",
-            "Make sure the paper is light enough to spin when the wind blows.",
-            "Place the wind spinner outside on a windy day and watch it spin in the breeze.",
+            "Collect clean cardboard boxes, toilet paper rolls, and paper towel tubes.",
+            "Cut cardboard into long, straight pieces or use the tubes as tracks.",
+            "Use tape or glue to connect the pieces at slight angles to create a path.",
+            "Create barriers, turns, and drops to make the marble run more interesting.",
+            "Test your marble run by dropping a small marble or ping pong ball and watching it travel.",
+            "Experiment with different angles and track designs to see how they affect the ball's movement.",
         ],
     },
-    "recycled paper": {
-        material: "Newspaper",
+    "electronic-parts-robot": {
+        material: "Electronics",
         steps: [
-            "Tear up old newspapers into small pieces and soak them in water for 1-2 hours.",
-            "Blend the soaked newspaper with water until it forms a thick pulp.",
-            "Spread the pulp out evenly on a flat surface, using a screen or mesh to drain excess water.",
-            "Once it’s mostly dry, peel off the pulp and let it air dry for a few more hours.",
-            "Use your recycled paper for writing, drawing, or crafting!",
+            "Ask an adult to help you safely disassemble old, unused electronics (like remote controls or small devices).",
+            "Collect interesting parts: buttons, small motors, wires, and plastic casings.",
+            "Use a sturdy base like a small cardboard box for the robot's body.",
+            "Attach electronic parts using safe, child-friendly glue or tape.",
+            "Create a face or design using the buttons and parts.",
+            "IMPORTANT: An adult must supervise and help with any electronic part handling.",
         ],
     },
+    "compost-terrarium": {
+        material: "Food Waste",
+        steps: [
+            "Find a clear plastic container with a lid (like a large jar or clean food container).",
+            "Ask an adult to help you create drainage holes in the bottom.",
+            "Layer the bottom with small rocks or pebbles for drainage.",
+            "Add a layer of soil mixed with your food scraps (like fruit peels, coffee grounds).",
+            "Plant some small seeds or seedlings on top of the compost layer.",
+            "Water lightly and place in a sunny spot. Watch how the food waste helps plants grow!",
+        ],
+    },
+    "paper-seed-starter": {
+        material: "Paper",
+        steps: [
+            "Tear used paper (printer paper, newspapers) into small pieces.",
+            "Soak the paper pieces in water for about an hour.",
+            "Blend the wet paper into a smooth pulp using a blender.",
+            "Press the pulp into small molds or egg carton sections.",
+            "Let the paper dry completely into seed-starting pots.",
+            "Fill the pots with soil and plant seeds. The paper will biodegrade and help the seeds grow!",
+        ],
+    },
+    "water-filter-experiment": {
+        material: "Water Filter",
+        steps: [
+            "Collect a plastic water bottle, cotton balls, sand, small rocks, and gravel.",
+            "Cut the bottom off the water bottle and turn it upside down like a funnel.",
+            "Place cotton balls at the bottle's neck to act as the first filter layer.",
+            "Add layers of fine sand, then small rocks, then larger gravel.",
+            "Pour dirty water (like muddy water from outside) through the filter.",
+            "Observe how the layers clean the water. ALWAYS have an adult verify the water's cleanliness before any contact!",
+        ],
+    },
+    "bottle-vertical-garden": {
+        material: "Bottles",
+        steps: [
+            "Collect clean plastic bottles of various sizes.",
+            "Ask an adult to help you cut the bottles horizontally, creating planting sections.",
+            "Punch small drainage holes in the bottom of each bottle section.",
+            "Fill each section with potting soil.",
+            "Plant herbs, small flowers, or succulents in each bottle section.",
+            "Hang the bottles vertically using strong string or wire, creating a hanging garden.",
+        ],
+    }
 };
 
+// Updated Generate Response Function
+function generateResponse(material) {
+    material = material.toLowerCase();
+    let response = "";
+    let project = "";
+
+    // Check for materials and assign appropriate projects
+    if (material.includes("magazines")) {
+        project = "magazine-collage";
+        response = `Creative Idea: Make a vibrant magazine collage to explore art and recycling! 🎨`;
+    } else if (material.includes("cardboard")) {
+        project = "cardboard-marble-run";
+        response = `Fun Project: Build an exciting marble run using cardboard! Learn physics while recycling. 🔮`;
+    } else if (material.includes("electronics") || material.includes("electronic")) {
+        project = "electronic-parts-robot";
+        response = `Maker Project: Create a unique robot from old electronic parts! 🤖`;
+    } else if (material.includes("food waste")) {
+        project = "compost-terrarium";
+        response = `Green Project: Turn food waste into a living terrarium! 🌱`;
+    } else if (material.includes("paper")) {
+        project = "paper-seed-starter";
+        response = `Eco-Friendly Project: Make seed-starting pots from recycled paper! 🌿`;
+    } else if (material.includes("water filter")) {
+        project = "water-filter-experiment";
+        response = `Science Experiment: Build a water filter and learn about clean water! 💧`;
+    } else if (material.includes("bottles")) {
+        project = "bottle-vertical-garden";
+        response = `Garden Project: Create a vertical garden from plastic bottles! 🌻`;
+    } else {
+        response = "Sorry, I don't have a project for that material yet. Try another one! 🙁";
+    }
+
+    // If a valid project is found, offer instructions
+    if (response && project) {
+        sendMessage(response);
+        setTimeout(() => {
+            const showInstructions = confirm("Would you like to see instructions for this project?");
+            if (showInstructions) {
+                const instructions = getInstructions(project);
+                sendInstructions(instructions);
+
+                // Scratch project offer
+                const scratchProject = confirm("Would you like to see a related Scratch project about this material?");
+                if (scratchProject) {
+                    sendMessage("Scratch project link will be provided soon! Stay tuned for a interactive coding experience related to your recycling project. 🖥️");
+                }
+
+                recyclingLevel++;
+                totalProjects++;
+                awards(recyclingLevel);
+            } else {
+                sendMessage("Thank you for your idea! Keep recycling! 😊");
+            }
+        }, 3000);
+    } else {
+        sendMessage(response);
+    }
+}
 
 // Functions
 function appendMessage(person, message, delay = 1000) {
@@ -217,64 +266,6 @@ function sendInstructions(instructions) {
     });
 }
 
-function generateResponse(material) {
-    material = material.toLowerCase();
-    let response = "";
-    let project = "";
-
-    // Check for recyclable materials and assign appropriate projects
-    if (material.includes("paper")) {
-        project = "windmill";
-        response = `Idea: Create a paper windmill to learn about aerodynamics! 💨`;
-    } else if (material.includes("plastic bottle")) {
-        project = "solar heater";
-        response = `Idea: Build a solar water heater using plastic bottles. ☀️`;
-    } else if (material.includes("cardboard")) {
-        project = "periscope";
-        response = `Idea: Build a periscope to explore optics. 👁️`;
-    } else if (material.includes("plastic bag")) {
-        project = "parachute";
-        response = `Idea: Create a parachute to study air resistance.🪂`;
-    } else if (material.includes("bottle cap")) {
-        project = "pendulum";
-        response = `Idea: Build a pendulum with a bottle cap to study motion and physics. 🏗️`;
-    } else if (material.includes("egg carton")) {
-        project = "planter";
-        response = `Idea: Use an egg carton to create a small planter for growing seeds. 🌱`;
-    } else if (material.includes("magazines")) {
-        project = "recycled art";
-        response = `Idea: Use old magazines to create unique recycled art pieces. 🎨`;
-    } else if (material.includes("plastic straw")) {
-        project = "wind spinner";
-        response = `Idea: Create a wind spinner using plastic straws to explore the power of wind. 🌬️`;
-    } else if (material.includes("newspaper")) {
-        project = "recycled paper";
-        response = `Idea: Make your own recycled paper from old newspapers. 📰`;
-    } else {
-        response = "Sorry, I don't have any ideas for that material yet. Try another one! 🙁";
-    }
-
-    // If a valid project is found, offer instructions
-    if (response && project) {
-        sendMessage(response);
-        setTimeout(() => {
-            const showInstructions = confirm("Would you like to see instructions for this project?");
-            if (showInstructions) {
-                const instructions = getInstructions(project);
-                sendInstructions(instructions);
-                recyclingLevel++;
-                totalProjects++;
-                awards(recyclingLevel);
-            } else {
-                sendMessage("Thank you for your idea! Keep recycling! 😊");
-            }
-        }, 3000);
-    } else {
-        sendMessage(response);
-    }
-}
-
-
 // Event Listeners
 sendMessageButton.addEventListener("click", () => {
     audio.play().catch(error => console.error("Click audio playback failed:", error));
@@ -296,5 +287,5 @@ sendMessageButton.addEventListener("click", () => {
 
 // Introduction Messages
 sendMessage("Welcome to the Recycling EngineerBot, an AI-powered chatbot designed to help kids learn engineering through projects using recyclable materials. 🌎🌳🥬", 0);
-sendMessage("Let's get started! What material would you like to learn about? Enter a material (e.g., paper, plastic bottle, cardboard, plastic bag, bottle cap, egg carton, magazines, plastic straw, newspaper, recycled paper):", 3500);
+sendMessage("Let's get started! What material would you like to learn about? Enter a material related to sustainability to start a project(e.g. magazines, cardboard, electronics, food waste, paper, water filter, bottles):", 3500);
 appendMessage("Chatbot","Type 'exit' to leave the chatbot.", 8000);
